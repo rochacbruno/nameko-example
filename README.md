@@ -1,3 +1,5 @@
+TL;DR: start coding [here](https://github.com/rochacbruno/nameko-example/blob/master/service/README.md)
+
 > "Micro-services is the new black" - Splitting the project in to independently scalable services is the currently the best option to ensure the evolution of the code. In Python there is a Framework called "Nameko" which makes it very easy and powerful.
 
 
