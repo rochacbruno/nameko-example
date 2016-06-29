@@ -1,0 +1,28 @@
+function_commands:
+  - function: api.app.run
+    name: run
+    options:
+      --debug:
+        default: true
+        is_flag: true
+      --port:
+        default: 5000
+      --host:
+        default: '127.0.0.1'
+      --use_reloader:
+        default: false
+        is_flag: true
+help_text: This is the {project_name} interactive shell
+project_name: Nameko Service Send Email API
+shell:
+  auto_import:
+    display: true
+    objects:
+      api.app:
+        as: app
+      nameko:
+  banner:
+    enabled: true
+    message: Nameko Service API Example
+  init_script: print("Starting interactive shell!")
+  readline_enabled: true

@@ -1,0 +1,27 @@
+Micro Service Based Compute and Mail API
+This API is made with Flask, Flasgger and Nameko
+---
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      id: data
+      properties:
+        operation:
+          type: string
+          enum:
+            - sum
+            - mul
+            - sub
+            - div
+        email:
+          type: string
+        value:
+          type: integer
+        other:
+          type: integer
+responses:
+  200:
+    description: |
+       Please wait the calculation, you'll receive an email with results
