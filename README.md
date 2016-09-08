@@ -92,9 +92,9 @@ class Mail(object):
         yag = yagmail.SMTP('myname@gmail.com', 'mypassword')
         # read the above credentials from a safe place.
         # Tip: take a look at Dynaconf setting module
-        yag.send(to=to.encode('utf-8),
-                 subject=subject.encode('utf-8),
-                 contents=[contents.encode('utf-8)])
+        yag.send(to=to.encode('utf-8'),
+                 subject=subject.encode('utf-8'),
+                 contents=[contents.encode('utf-8')])
 
 
 class Compute(object):
