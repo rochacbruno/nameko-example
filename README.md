@@ -79,7 +79,7 @@ We are going to put both services in a single python module, but you can also sp
 
 In a file called ``service.py``
 
-```
+```python
 import yagmail
 from nameko.rpc import rpc, RpcProxy
 
@@ -187,7 +187,7 @@ Install Nameko, Flask and Flasgger
 
 Lets say you have the following code in a file ``api.py``
 
-```
+```python
 from flask import Flask, request
 from flasgger import Swagger
 from nameko.standalone.rpc import ClusterRpcProxy
